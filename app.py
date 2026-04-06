@@ -19,7 +19,7 @@ SENDER_EMAIL = "tejasnj14@gmail.com"
 APP_PASSWORD = "fpqe tkvo mjgi tbzc"  # Ensure no trailing whitespace
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-2.0-flash")  # gemini-2.0-flash is the official name for what is often seen as 2.5-flash
+model = genai.GenerativeModel("gemini-2.5-flash")  # gemini-2.0-flash is the official name for what is often seen as 2.5-flash
 
 def google_search(query, num_results=5):
     url = "https://www.googleapis.com/customsearch/v1"
