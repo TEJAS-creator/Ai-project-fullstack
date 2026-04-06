@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinetiX AI Chat | Smart Web Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-blobs">
+    <div class="blob" style="top: 10%; left: 10%; background: #4f46e5; animation-delay: 0s;"></div>
+    <div class="blob" style="top: 60%; left: 80%; background: #7c3aed; animation-delay: -5s;"></div>
+    <div class="blob" style="top: 80%; left: 20%; background: #06b6d4; animation-delay: -10s;"></div>
+  </div>
+
+  <header>
+    <h1>KinetiX AI Bot</h1>
+    <p class="subtitle">Next-generation Intelligence powered by Gemini & Google Search</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="selector-group">
+        <label for="function-select">Select Functionality</label>
+        <select id="function-select">
+          <option value="search-only">🔎 Real-time Search only</option>
+          <option value="gemini-only">🤖 Gemini AI only</option>
+          <option value="hybrid">🧠 Hybrid (Search + Summary)</option>
+          <option value="news">📰 Live News Digest</option>
+        </select>
+      </div>
+
+      <!-- Main Input Section -->
+      <div id="main-input-container" class="input-container">
+        <div class="input-group">
+          <input type="text" id="query-input" placeholder="What's your question today?">
+          <button id="submit-btn" class="primary-btn">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <!-- News Section -->
+      <div id="news-section-container" class="input-container" style="display: none;">
+        <div class="input-group">
+          <input type="email" id="email-input" placeholder="Receiver Email address">
+          <button id="news-btn" class="primary-btn">
+            Send Live News Summary
+          </button>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem; color: var(--text-muted);">Thinking...</p>
+      </div>
+
+      <!-- Results Area -->
+      <div class="results" id="results">
+        <!-- Search Results -->
+        <div id="search-results-section" class="result-section">
+          <h3><i data-lucide="search"></i> Search Results</h3>
+          <div class="content-box" id="search-content"></div>
+        </div>
+
+        <!-- AI Response -->
+        <div id="ai-response-section" class="result-section">
+          <h3><i data-lucide="sparkles"></i> AI Insight</h3>
+          <div class="content-box" id="ai-content"></div>
+        </div>
+
+        <!-- Email Success -->
+        <div id="email-status-section" class="result-section">
+          <p id="email-status-text" style="color: var(--accent); font-weight: 500;"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
