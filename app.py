@@ -11,7 +11,7 @@ app = Flask(__name__, static_folder=".", template_folder=".")
 CORS(app)
 
 # ---------------- CONFIG ----------------
-GEMINI_API_KEY = "AIzaSyCyqhGHRJ__-hR56D44iZXl2qoD4FYG-hg"
+GEMINI_API_KEY = "AIzaSyD15EWe5taz5UXIhG8H_EkWXE5pW2gd8xw"
 GOOGLE_API_KEY = "AIzaSyB6yBjUkLifCQd0erTDT3C8i7NlTlxPvK4"
 CX_ID = "51fd225c21c2c4c38"
 
