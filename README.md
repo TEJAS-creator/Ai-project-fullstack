@@ -1,80 +1,89 @@
-# 🤖 Smart AI Chatbot (Streamlit App)
+# 🧠 Gemini + Google Search Intelligence Engine
 
-An intelligent, multi-functional AI chatbot built using **Streamlit**, **Google Gemini API**, and **Google Custom Search API**.
-This application combines real-time web search, AI-generated responses, and automated email delivery into a single powerful interface.
-
----
-
-## 🚀 Features
-
-### 🔎 1. Real-time Search
-
-* Fetches live results using Google Custom Search API
-* Displays concise titles and snippets
-
-### 🤖 2. Gemini AI Chat
-
-* Uses Gemini model (`gemini-2.5-flash`)
-* Provides clear, concise, and reliable answers
-
-### 🔍 3. Search + AI Summary
-
-* Combines real-time search with AI summarization
-* Ensures accurate, context-based responses
-
-### 📰 4. Live News → Email
-
-* Fetches latest news across categories:
-
-  * Technology
-  * Indian Politics
-  * Sports
-  * Finance
-  * Stock Market
-  * Lifestyle
-* Summarizes using AI
-* Sends directly to any email
+A sophisticated, multi-functional AI platform combining the reasoning power of **Google Gemini 2.5 Flash** with the real-time retrieval capabilities of the **Google Custom Search API**. This application delivers precise, context-aware information directly to your browser or inbox.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Key Functionalities
 
-* **Frontend:** Streamlit
-* **Backend:** Python
-* **AI Model:** Google Gemini API
-* **Search Engine:** Google Custom Search API
-* **Email Service:** SMTP (Gmail)
+### 🔎 1. Real-time Web Search
+*   Harnesses the **Google Custom Search API** to fetch live, high-relevance web results.
+*   Provides clean, distilled snippets with direct links to sources.
+
+### 🤖 2. Gemini AI Assistant
+*   Powered by `gemini-2.5-flash` for lightning-fast, intelligent dialogue.
+*   Optimized for conciseness, technical accuracy, and creative problem-solving.
+
+### 🧠 3. Hybrid Intelligence (Search + Synthesis)
+*   **The Powerhouse Mode:** Fetches real-time data first, then feeds it into Gemini for a synthesized, context-rich summary.
+*   Eliminates AI hallucinations by grounding responses in verified web data.
+
+### 📰 4. Automated News Digest
+*   Aggregates the latest news across 6 genres: *Tech, Politics, Sports, Finance, Markets, and Lifestyle*.
+*   Summarizes complex headlines into distinct, actionable bullet points.
+*   **Direct-to-Inbox:** Delivers the curated digest via secure SMTP email integration.
 
 ---
 
-## 🔑 Configuration
+## 🛠️ Tech Architecture
 
-Replace the following values in your code:
+*   **Backend:** Python 3.10+ (Flask Framework)
+*   **Frontend:** Vanilla JavaScript, HTML5, CSS3 (Glassmorphic Design)
+*   **AI Engine:** Google Generative AI (Gemini API)
+*   **Search Core:** Google Custom Search JSON API
+*   **Icons:** Lucide-React Icons
+*   **Notification:** SMTP (Gmail Protocol)
 
-```python
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
-GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
-CX_ID = "YOUR_CX_ID"
+---
 
-SENDER_EMAIL = "your_email@gmail.com"
-APP_PASSWORD = "your_app_password"
+## ⚙️ Quick Start Guide
+
+### 1. Prerequisites
+*   Python 3.8 or higher installed on your system.
+*   A Google Cloud Project for Gemini and Search API keys.
+*   A Gmail account with an "App Password" for email functionality.
+
+### 2. Installation
+```bash
+# Clone the repository
+git clone https://github.com/TEJAS-creator/AI-Project.git
+cd AI-Project
+
+# Install dependencies
+pip install flask flask-cors requests google-generativeai
 ```
 
-## 📸 Features Overview
+### 3. Configuration
+Open `app.py` and update the following credentials:
+```python
+# API Keys
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
+CX_ID = "YOUR_CUSTOM_SEARCH_ENGINE_ID"
 
-| Feature | Description             |
-| ------- | ----------------------- |
-| Search  | Live Google results     |
-| Gemini  | AI-generated answers    |
-| Hybrid  | Search + AI summary     |
-| News    | AI-curated news + Email |
+# Email Credentials
+SENDER_EMAIL = "your-email@gmail.com"
+APP_PASSWORD = "your-16-digit-app-password"
+```
+
+### 4. Running the Application
+```bash
+python app.py
+```
+Visit **`http://localhost:5500`** in your browser to start exploring!
 
 ---
 
-## 📧 Email Functionality
-
-* Sends news summaries using Gmail SMTP
-* Dynamic receiver email input
-* Supports real-time delivery
+## 🌐 Modern UI Aesthetics
+The platform features a **premium glassmorphic interface** with:
+*   **Dynamic Backgrounds:** Animated gradient blobs for a futuristic feel.
+*   **Real-time Feedback:** Smooth loading states and micro-interactions.
+*   **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing.
 
 ---
+
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+*Built with ❤️ by Tejas NJ*

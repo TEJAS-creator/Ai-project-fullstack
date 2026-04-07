@@ -3,6 +3,7 @@ const GEMINI_API_KEY = "AIzaSyCyqhGHRJ__-hR56D44iZXl2qoD4FYG-hg";
 const GOOGLE_API_KEY = "AIzaSyB6yBjUkLifCQd0erTDT3C8i7NlTlxPvK4";
 const CX_ID = "51fd225c21c2c4c38";
 
+
 // UI Selectors
 const functionSelect = document.getElementById('function-select');
 const mainInputContainer = document.getElementById('main-input-container');
@@ -84,17 +85,17 @@ submitBtn.addEventListener('click', async () => {
         const results = await googleSearch(query);
         searchContent.innerText = results;
         searchSection.style.display = 'block';
-    } 
+    }
     else if (selectedOption === 'gemini-only') {
         const answer = await askGemini(`User Question: ${query}\n(Provide a concise, reliable answer)`);
         aiContent.innerText = answer;
         aiSection.style.display = 'block';
-    } 
+    }
     else if (selectedOption === 'hybrid') {
         const results = await googleSearch(query);
         const prompt = `Context:\n${results}\n\nUser Question: ${query}\nSummarize clearly using the context.`;
         const answer = await askGemini(prompt);
-        
+
         searchContent.innerText = results;
         searchSection.style.display = 'block';
         aiContent.innerText = answer;
