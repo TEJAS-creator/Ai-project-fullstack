@@ -43,17 +43,8 @@ A sophisticated, multi-functional AI platform combining the reasoning power of *
 *   A Google Cloud Project for Gemini and Search API keys.
 *   A Gmail account with an "App Password" for email functionality.
 
-### 2. Installation
-```bash
-# Clone the repository
-git clone https://github.com/TEJAS-creator/AI-Project.git
-cd AI-Project
 
-# Install dependencies
-pip install flask flask-cors requests google-generativeai
-```
-
-### 3. Configuration
+### 2. Configuration
 Open `app.py` and update the following credentials:
 ```python
 # API Keys
@@ -66,7 +57,7 @@ SENDER_EMAIL = "your-email@gmail.com"
 APP_PASSWORD = "your-16-digit-app-password"
 ```
 
-### 4. Running the Application
+### 3. Running the Application
 ```bash
 python app.py
 ```
@@ -74,16 +65,3 @@ Visit **`http://localhost:5500`** in your browser to start exploring!
 
 ---
 
-## 🌐 Modern UI Aesthetics
-The platform features a **premium glassmorphic interface** with:
-*   **Dynamic Backgrounds:** Animated gradient blobs for a futuristic feel.
-*   **Real-time Feedback:** Smooth loading states and micro-interactions.
-*   **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing.
-
----
-
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-*Built with ❤️ by Tejas NJ*
