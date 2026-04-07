@@ -1,7 +1,7 @@
 // API Config (Extracted from chat.py)
-const GEMINI_API_KEY = "AIzaSyCyqhGHRJ__-hR56D44iZXl2qoD4FYG-hg";
-const GOOGLE_API_KEY = "AIzaSyB6yBjUkLifCQd0erTDT3C8i7NlTlxPvK4";
-const CX_ID = "51fd225c21c2c4c38";
+const GEMINI_API_KEY = "";
+const GOOGLE_API_KEY = "";
+const CX_ID = "";
 
 
 // UI Selectors
