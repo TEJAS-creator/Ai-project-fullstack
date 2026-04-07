@@ -11,12 +11,12 @@ app = Flask(__name__, static_folder=".", template_folder=".")
 CORS(app)
 
 # ---------------- CONFIG ----------------
-GEMINI_API_KEY = "AIzaSyD15EWe5taz5UXIhG8H_EkWXE5pW2gd8xw"
-GOOGLE_API_KEY = "AIzaSyB6yBjUkLifCQd0erTDT3C8i7NlTlxPvK4"
-CX_ID = "51fd225c21c2c4c38"
+GEMINI_API_KEY = ""
+GOOGLE_API_KEY = ""
+CX_ID = ""
 
 SENDER_EMAIL = "tejasnj14@gmail.com"
-APP_PASSWORD = "fpqe tkvo mjgi tbzc"  # Ensure no trailing whitespace
+APP_PASSWORD = ""  # Ensure no trailing whitespace
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")  # gemini-2.0-flash is the official name for what is often seen as 2.5-flash
